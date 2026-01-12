@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light;
+  
+  /* Cozy Warm Light Theme (Paper/Beige/Coffee) */
+  --bg-primary: #fdfbf7;   /* Cream White  */
+  --bg-secondary: #f3f0e8; /* Light Beige  */
+  --bg-tertiary: #e6e0d4;  /* Darker Beige  */
+  
+  --text-primary: #4a453e; /* Dark Brownish Grey */
+  --text-secondary: #857f72; /* Warm Grey  */
+  --text-accent: #b45309;    /* Amber 700  */
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 5px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #57534e; /* Stone 600 */
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--text-accent);
+  color: #fff;
+}
+
